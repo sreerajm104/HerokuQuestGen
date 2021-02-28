@@ -19,3 +19,5 @@ similarity==0.0.1
 flashtext==2.7
 sentencepiece==0.1.95
 sortedcollections==1.2.1
+torch==1.7.1
+mkl_random==1.1.1
