@@ -12,14 +12,14 @@ from transformers import T5ForConditionalGeneration,T5Tokenizer
 import random
 import spacy
 import boto3
-import zipfile
+# import zipfile
 import os
-import json
+# import json
 from sense2vec import Sense2Vec
 import requests
-from collections import OrderedDict
+# from collections import OrderedDict
 import string
-import pke
+# import pke
 import nltk
 import numpy 
 from nltk import FreqDist
@@ -37,7 +37,7 @@ from mcq import get_keywords
 from mcq import get_sentences_for_keyword
 from mcq import generate_questions_mcq
 from mcq import generate_normal_questions
-import time
+
 
 
 class QGen:
