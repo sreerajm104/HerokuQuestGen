@@ -32,8 +32,8 @@ from flashtext import KeywordProcessor
 
 from collections import Counter
 from string import punctuation
-nlp = spacy.load("en_core_web_lg") 
-# nlp = spacy.load("en_core_web_sm")
+# nlp = spacy.load("en_core_web_lg") 
+nlp = spacy.load("en_core_web_sm")
 
 def MCQs_available(word,s2v):
     word = word.replace(" ", "_")
