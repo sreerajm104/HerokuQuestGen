@@ -16,4 +16,4 @@ similarity==0.0.1
 flashtext==2.7
 sentencepiece==0.1.95
 sortedcollections==1.2.1
-torch==1.7.1
+https://download.pytorch.org/whl/cpu/torch-1.7.1%2Bcpu-cp36-cp36m-win_amd64.whl
