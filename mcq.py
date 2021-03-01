@@ -19,7 +19,7 @@ from sense2vec import Sense2Vec
 import requests
 from collections import OrderedDict
 import string
-import pke
+# import pke
 import nltk
 from nltk import FreqDist
 nltk.download('brown')
