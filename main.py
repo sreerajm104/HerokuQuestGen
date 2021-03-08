@@ -23,9 +23,9 @@ from sense2vec import Sense2Vec
 import nltk
 import numpy 
 from nltk import FreqDist
-nltk.download('brown')
-nltk.download('stopwords')
-nltk.download('popular')
+#nltk.download('brown')
+#nltk.download('stopwords')
+#nltk.download('popular')
 #from nltk.corpus import stopwords
 from nltk.corpus import brown
 #from nltk.tokenize import sent_tokenize
