@@ -4,21 +4,21 @@ Created on Mon Feb 22 20:28:01 2021
 
 @author: sree
 """
-import numpy as np # linear algebra
-import pandas as pd # data processing, CSV file I/O (e.g. pd.read_csv)
-import time
+#import numpy as np # linear algebra
+#import pandas as pd # data processing, CSV file I/O (e.g. pd.read_csv)
+#import time
 import torch
 from transformers import T5ForConditionalGeneration,T5Tokenizer
-import random
+#import random
 import spacy
-import boto3
+#import boto3
 # import zipfile
-import os
+#import os
 # import json
 from sense2vec import Sense2Vec
-import requests
+#import requests
 # from collections import OrderedDict
-import string
+#import string
 # import pke
 import nltk
 import numpy 
@@ -26,16 +26,16 @@ from nltk import FreqDist
 nltk.download('brown')
 nltk.download('stopwords')
 nltk.download('popular')
-from nltk.corpus import stopwords
+#from nltk.corpus import stopwords
 from nltk.corpus import brown
-from nltk.tokenize import sent_tokenize
+#from nltk.tokenize import sent_tokenize
 from similarity import levenshtein
-from flashtext import KeywordProcessor
-from encoding import beam_search_decoding
+#from flashtext import KeywordProcessor
+#from encoding import beam_search_decoding
 from mcq import tokenize_sentences
 from mcq import get_keywords
 from mcq import get_sentences_for_keyword
-from mcq import generate_questions_mcq
+#from mcq import generate_questions_mcq
 from mcq import generate_normal_questions
 
 
