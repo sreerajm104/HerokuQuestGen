@@ -4,12 +4,12 @@ Created on Mon Feb 22 20:44:41 2021
 
 @author: sree
 """
-from flask import Flask, request, jsonify, render_template,Response
+from flask import Flask, request, jsonify, render_template,Response, json
 import pandas as pd
 import numpy as np
 import requests
 from werkzeug.exceptions import HTTPException
-import json
+
 
 from main import QGen
 
