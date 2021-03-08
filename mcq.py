@@ -4,33 +4,33 @@ Created on Mon Feb 22 20:31:19 2021
 
 @author: sree
 """
-import numpy as np # linear algebra
-import pandas as pd # data processing, CSV file I/O (e.g. pd.read_csv)
-import time
+#import numpy as np # linear algebra
+#import pandas as pd # data processing, CSV file I/O (e.g. pd.read_csv)
+#import time
 import torch
-from transformers import T5ForConditionalGeneration,T5Tokenizer
+#from transformers import T5ForConditionalGeneration,T5Tokenizer
 import random
 import spacy
-import boto3
-import zipfile
-import os
-import json
-from sense2vec import Sense2Vec
-import requests
+##import boto3
+#import zipfile
+#import os
+#import json
+#from sense2vec import Sense2Vec
+#import requests
 from collections import OrderedDict
 import string
 # import pke
 import nltk
-from nltk import FreqDist
+#from nltk import FreqDist
 nltk.download('brown')
 nltk.download('stopwords')
 nltk.download('popular')
-from nltk.corpus import stopwords
-from nltk.corpus import brown
+#from nltk.corpus import stopwords
+#from nltk.corpus import brown
 from nltk.tokenize import sent_tokenize
 from flashtext import KeywordProcessor
 
-from collections import Counter
+#from collections import Counter
 from string import punctuation
 # nlp = spacy.load("en_core_web_lg") 
 nlp = spacy.load("en_core_web_sm")
