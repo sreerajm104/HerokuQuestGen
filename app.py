@@ -8,7 +8,7 @@ from flask import Flask, request, jsonify, render_template,Response
 import pandas as pd
 import numpy as np
 import requests
-
+from werkzeug.exceptions import HTTPException
 
 from main import QGen
 
@@ -73,10 +73,25 @@ def add_header(response):
     response.headers['Cache-Control'] = 'public, max-age=600'
     return response
 
-@app.errorhandler(503)
-def page_not_found(error):
-    """Custom 503 page."""
-    return render_template('503.html')
+
+@app.errorhandler(HTTPException)
+def handle_exception(e):
+    """Return JSON instead of HTML for HTTP errors."""
+    # start with the correct headers and status code from the error
+    response = e.get_response()
+    # replace the body with JSON
+    response.data = json.dumps({
+        "code": e.code,
+        "name": e.name,
+        "description": e.description,
+    })
+    response.content_type = "application/json"
+    return response
+#
+#@app.errorhandler(503)
+#def page_not_found(error):
+#    """Custom 503 page."""
+#    return render_template('503.html')
 
 if __name__ == "__main__":
     app.run(debug=True)
